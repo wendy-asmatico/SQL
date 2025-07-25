@@ -155,3 +155,25 @@ LIMIT 5;
 
 SELECT modele FROM avions
 WHERE autonomie_km > 6000 AND autonomie_km < 13000;
+
+-- SQL 6
+
+UPDATE avions
+SET autonomie_km = 6300
+WHERE modele = 'A320';
+
+UPDATE avions
+SET constructeur = 'Boeing'
+WHERE constructeur = 'McDonnell Douglas';
+
+UPDATE avions
+SET capacite = 10 
+WHERE constructeur = 'Bombardier'; id
+
+DELETE FROM avions
+WHERE capacite < 100;
+
+DELETE FROM avions
+WHERE en_service = FALSE;
+
+
