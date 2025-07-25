@@ -1,4 +1,4 @@
--- Active: 1753278632562@@127.0.0.1@3306@planning
+-- Active: 1753278632562@@127.0.0.1@3306@concessionnaire
 
 -- SQL 7 Exercice 1
 CREATE DATABASE planning;
@@ -45,12 +45,12 @@ CREATE TABLE vehicule(
     marque VARCHAR(255),
     carburant VARCHAR(255),
     puissance INT,
-    prix INT,
+    prix INT
 )
 
 CREATE TABLE client(
     id INT PRIMARY KEY AUTO_INCREMENT,
-    nom VARCHAR(255),
+    nom VARCHAR(255)
 )
 
 CREATE TABLE stock(
@@ -63,7 +63,7 @@ CREATE TABLE stock(
 
 CREATE TABLE commande (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    date DATE DEFAULT CURRENT_TIMESTAMP,
+    date_ajout TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     montant INT,
     vehicule_id INT,
     client_id INT,
